@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 2,
+  "id": "agent-hierarchy",
+  "name": "Agent Hierarchy",
+  "version": "0.1.0",
+  "description": "A sidebar panel and the worker that answers it.",
+  "engines": {
+    "orca": ">=1.4.248"
+  },
+  "execution": "trusted-worker",
+  "pluginApi": 1,
+  "main": "src/worker.ts",
+  "contributes": {
+    "panels": [
+      {
+        "id": "agent-hierarchy",
+        "title": "Agent Hierarchy",
+        "icon": "blocks",
+        "entry": "src/panel.tsx",
+        "ui": "components"
+      }
+    ]
+  },
+  "capabilities": [
+    {
+      "kind": "storage:own"
+    },
+    {
+      "kind": "agent:read"
+    },
+    {
+      "kind": "workspace:read"
+    },
+    {
+      "kind": "workspace:write"
+    }
+  ]
+}
