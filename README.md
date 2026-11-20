@@ -1,4 +1,4 @@
-# orca-pluggins
+# orca-plugins
 
 Personal collection of [Orca](https://orca.do) plugins.
 

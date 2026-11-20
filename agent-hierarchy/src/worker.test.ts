@@ -45,7 +45,7 @@ test('repoName reads forge ids only', () => {
 
 test('deriveRepo falls back to the path basename for local repos', () => {
   assert.equal(deriveRepo('github:org/phone', '/x/y'), 'phone')
-  assert.equal(deriveRepo('repo:uuid', '/Users/m/orca/projects/orca-pluggins'), 'orca-pluggins')
+  assert.equal(deriveRepo('repo:uuid', '/Users/m/orca/projects/orca-plugins'), 'orca-plugins')
   assert.equal(deriveRepo(null, '/a/b/'), 'b')
 })
 
